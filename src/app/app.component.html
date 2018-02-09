@@ -1,3 +1,9 @@
 <h1>
-  {{title}}
+    TITLE: {{title}}
+    <br/> MESSAGE: {{message}}
+    <br/> RETURN CODE: {{returnCode}}
+    <br/>
+
+    <input type="text" name="url" [(ngModel)]="urlInput" (keyup.enter)="consumeRestFull()" />
+    <button (click)="consumeRestFull()">GET</button>
 </h1>
